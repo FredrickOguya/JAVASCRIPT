@@ -1,0 +1,13 @@
+.js-button,
+.js-button-2,
+.js-button-3{
+ background-color: rgb(220, 220, 220);
+ border: none;
+ width: 100px;
+ height: 30px;
+ border-radius: 3px;
+}
+.after{
+ background-color: black;
+ color: white;
+}

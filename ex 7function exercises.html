@@ -1,21 +1,34 @@
-greet ();
-function greet (name) {
-    if (!name) {
-        console.log('hi there')
-    }
-    else {
-        console.log('hello!', name)
-    }
-};
-console.log(convertToFahrenheit(25))
-convertToFahrenheit(32)
-convertToCelcious(86)
-convertToCelcious(54)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         greet ();
+        function greet (name) {
+            if (!name) {
+                console.log('hi there')
+            }
+            else {
+                console.log('hello!', name)
+            }
+        };
+        console.log(convertToFahrenheit(25))
+        convertToFahrenheit(32)
+        convertToCelcious(86)
+        convertToCelcious(54)
+        
+        
+        function convertToFahrenheit(celcious) {
+            fahrenheit =  (celcious * 9/5) + 32
+            console.log(fahrenheit)
 
-
-function convertToFahrenheit(celcious) {
-    fahrenheit =  (celcious * 9/5) + 32
-    console.log(fahrenheit)
-
-    return 'done';
-} 
+            return 'done';
+        } 
+    </script>
+</body>
+</html>

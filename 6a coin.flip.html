@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let hour= 8
+        let name = "fred"
+         if (hour <= 12 && hour >= 6 ) {
+            console.log(`good morning ${name}!`);
+         } else if (hour >= 13 && hour <= 17 ) {
+            console.log(`good afternoon ${name}!`)
+         } else {
+            console.log(`good night ${name}!`)
+         }
+
+
+        
+
+         let age = 3
+         const isHoliday = false
+         if ( (age <= 5 || age >=65) && !isHoliday) {
+            console.log('discount');
+         } else {
+            console.log('no discount');
+         }
+
+          let random = Math.random ();
+          const results = random < 0.5 ? 'heads' : 'tails'
+
+          const guess = 'heads';
+          console.log(random)
+          console.log(results)
+
+          console.log(guess === results ? 'you win' : 'you loose')
+         
+    </script>
+</body>
+</html>

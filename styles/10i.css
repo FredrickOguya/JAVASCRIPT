@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+  }
+  .calculation{
+    font-family: roboto Arial;
+    color: white;
+    height: 15px;
+    font-size: 25px;
+  }
+  .button {
+    color: white;
+    background-color: rgb(35, 34, 34);
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-top: 5px;
+
+  }
+  .rbutton {
+    color: white;
+    background-color: orange;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-top: 5px;
+  }

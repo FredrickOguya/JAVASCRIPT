@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+    no++;
+    ">add</button>
+    <button onclick="
+    no--;
+    ">remove</button>
+    <button class="words" onclick="
+    change ();
+    ">finish</button>
+    <button onclick="
+    done()
+    ">Add to cart</button>
+    <p class="add"></p>
+    <script>
+       /* function change() {
+            const writing = document.querySelector('.words')
+
+            writing.innerHTML = 'Loading...'
+            setTimeout(() => {writing.innerHTML='changed';},2000)
+        }
+        
+        function change() {
+            const writing = document.querySelector('.words')
+        
+
+            setTimeout(() => {writing.innerHTML='changed';},2000)
+        }
+        function done () {
+            const element = document.querySelector('.add')
+
+            element.innerHTML= 'added'
+            
+            setTimeout(()=>{element.innerHTML=''}, 2000)
+        }
+        setInterval( ()=> {
+            if (document.title === 'App') {
+                document.title = '(2) New message'
+            } else{document.title = 'App'}
+        },1000)*/
+        let no =2;
+        setInterval(function () {
+            
+            if (document.title === 'App') {
+                document.title = `(${no}) New message`
+            } else{document.title = 'App'}
+        },1000)
+    </script>
+    </script>
+</body>
+</html>

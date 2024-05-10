@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+    no++;
+    notify ();
+    ">add</button>
+
+
+    <button onclick="
+        if (no > 0) {
+            no--;
+        }
+        
+        if (no === 0){stopForNow()}
+        ">remove</button>
+    <script> 
+    let no = 2;
+
+    let displayNotification;
+
+    let alreadyDoing;
+
+
+    notify();
+
+    function notify() {
+        if (alreadyDoing){
+            return;
+        }
+    }
+    alreadyDoing = true;
+    
+
+    displayNotification = setInterval(function () {
+            
+            if (document.title === 'App') {
+                document.title = `(${no}) New message`
+            } else{document.title = 'App'}
+        },1000)
+
+        function stopForNow() {
+            alreadyDoing = false;
+
+            clearInterval(displayNotification);
+            document.title = 'App';
+        }
+    </script>
+</body>
+</html>

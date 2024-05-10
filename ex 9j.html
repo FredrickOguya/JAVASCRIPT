@@ -67,17 +67,23 @@
 
         <button onclick="
         calculation = eval(calculation)
-        console.log(calculation);
-            localStorage.setItem('latest', `${calculation}`)
-            calculation = '';
+        displayCalculation()
+            localStorage.setItem('latest', calculation)
         
         "  
         >=</button>
+        <button onclick="
+            calculation= '';
+            displayCalculation();
+        ">clear</button>
         <p class="calculation"></p>
         <script>
           function UpdateCalculation(value) {
             calculation += value;
             console.log(calculation);
+            displayCalculation();
+          }
+          function displayCalculation() {
             document.querySelector('.calculation').innerHTML = calculation;
           }
             console.log(localStorage.getItem('latest'));

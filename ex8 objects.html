@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          const product1 = {
+            name: 'basketball',
+            price: 1000,
+
+        }
+        product1.price += 500;
+
+        product1['time'] = '3 days';
+
+        
+        const product2 = {
+            name: 'basketball',
+            price: 1000,
+        }
+        product2.price += 500;
+
+        product2['time'] = '3 days';
+
+        comparePrice();
+        isSameProduct()
+
+        function comparePrice() {
+            console.log(product1.price < product2.price ? 'product 1' : 'product 2')
+        }
+
+
+        function isSameProduct() {
+            console.log(product1.name === product2.name && product1.price === product2.price ? 'true' : 'false')
+        }
+
+        let todo = 'fLaBbbeRgasTEd';
+         let yeah = todo.repeat(3); 
+         
+
+         console.log(yeah);
+
+    </script>
+</body>
+</html>

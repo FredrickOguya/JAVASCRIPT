@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countWords(object){
+            let result = {};
+
+            for(let i = 0; i<object.length;i++){
+                const name = object[i];
+
+                if (!result[name]) {
+                    result[name] = 1;
+                } else {
+                    result[name]++;
+                }
+            }
+            return result;
+        }
+        console.log(countWords(['apple','grape','apple','apple']))
+    </script>
+</body>
+</html>
