@@ -1,0 +1,29 @@
+/*
+This is an important concept we need to understand before moving on. Some values in JavaScript are passed by value, and some by reference. What does this mean?
+
+Let's say we have two numbers, x and y. We will give x the value of 10, and y the value of x. After that, we will increase x by 10. What do you think the value of both variables will be in the end?
+
+let x = 10;
+let y = x;
+
+x += 10;
+
+console.log(x, y);
+Output: 20, 10.
+
+This is the output because when we set y to x, we are just setting y to the same number as x. When we change x, y is not affected. Now, let's do the same with objects.
+
+Let's have an object named myHuman. It has the properties: age: 42 and kids: 2. Now, we will create a variable called anotherHuman and give it the value of myHuman. Next, we will change the age of myHuman to 53. What do you think the values of both objects will be?
+
+const myHuman = { age: 42, kids: 2 };
+const anotherHuman = myHuman;
+
+myHuman.age = 53;
+
+console.log(myHuman, anotherHuman);
+Output:
+
+{ age: 53, kids: 2 },
+{ age: 53, kids: 2 }
+So, how did changing myHuman also change anotherHuman? Well, when you give a variable the value of an object, they become the same object. With the line const anotherHuman = myHuman; we are setting both variables to the same object. We are not just duplicating the value.
+*/
