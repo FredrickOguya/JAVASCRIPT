@@ -1,0 +1,31 @@
+/*
+When creating methods inside objects that use properties from that object, we have to be careful. For example:
+
+const square = {
+    side: 5,
+    computeArea = function() {
+        return side * side;
+    }
+}
+This should work perfectly, right? Well, believe it or not, this will not work. The reason for that is because the side variable is not a variable. It is a property inside of the object and can only be used as a property. So, how do we access this property? Using the this keyword again.
+
+const square = {
+    side: 5,
+    computeArea = function() {
+        return this.side * this.side;
+    }
+}
+This is saying use the property side from THIS object. The same applies when we are talking about methods:
+
+const human = {
+    openEyes: function() {
+        ...
+    }
+    
+    wakeUp: {
+        this.openEyes();
+        
+        ...
+    }
+}
+*/
