@@ -36,10 +36,44 @@ Challenge
 
 Easy
 Write a constructor function named Cube. It should take in one parameter, the length of one side. It should have a side property with the value of the parameter. It should also have a method called calculateVolume which calculates and returns the volume. It should have another method called setSide() which takes in a parameter and changes the value of this.side to the passed parameter.
-*/
+
 function Cube(side) {
     this.side= side;
     this.calculateVolume =function(){return this.side**3}
     this.setSide=(val)=> this.side=val
 }
 Cube(7)
+*/
+var findClosestNumber = function(nums) {
+    let absoluteArray=[]
+   let  value = 0
+   let positiOf= 0
+    let indexOfnear= 0
+    let one = false;
+    let zero = false;
+    for(let i = 0;i<nums.length;i++){
+        if (nums[i]===1){
+            one = true;
+            
+        }else if(nums[i]===0){
+            zero =true;
+            break
+        }
+    }
+    for(let i =0;i<nums.length;i++){
+        absoluteArray.push(Math.abs(nums[i]))
+        
+    }
+    value +=Math.min(...absoluteArray)
+    positiOf += absoluteArray.indexOf(value)
+    if (one&&!zero){
+        return 1;
+    }else if(zero){
+        return 0
+    }
+    {
+        return nums[positiOf]
+    }
+    
+};
+console.log(findClosestNumber([2,-1,1]))
