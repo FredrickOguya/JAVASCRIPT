@@ -1,0 +1,24 @@
+/*
+What and why?
+
+If you recall, Encapsulation and Abstraction are 2 of the 4 pillars of Object Oriented Programming. So, what exactly are these, why should we use them and how do we implement them in JavaScript?
+
+What?
+Encapsulation can be defined as “the packing of data and functions into one component”.  It basically means combining data and methods that operate on that data into one object.
+
+Data that is contained within a system is made available to use through the system. For example, you can not directly access a snack from a vending machine without having to use the machine. The vending machine has a few defined procedures which allow you to access the items in it. This is exactly what is meant by Encapsulation.
+
+Abstraction is a way of hiding the implementation details and showing only the functionality to the users. In other words, it ignores the irrelevant details and shows only the required ones. This is similar to Encapsulation.
+
+When we have an object, we can use abstraction to create private variables that can be accessed only inside of that object. Any code outside of that object would not be able to read or modify those private properties or methods. We will only have the necessary properties and methods as public, the ones that the whole application will be able to use.
+
+Why?
+So, why do we want to make some data in objects private, and some public?
+
+First of all, it makes our application simpler. Why should an object have lots of public properties and methods, when only one or two are actually being used outside of the object? We can reduce that complexity.
+
+Second, it can help us reduce the number of changes we would have to do in our code if we make a change in the object. If we have a public method being used multiple times outside of the object and we make a change to the parameters or something else, we would have to go back to every place where we have used that method and change our code. That is not ideal. If we make this method private and only use it inside of the object in other methods, we will reduce the number of changes we have to do.
+
+Third, it stops accidental mistakes from happening. Let's say you have a public property called radius and a method called area that calculates the area of the circle. Now, you only use the calculateArea method in your app, but you don't use radius anywhere. What if some part of your code accidentally makes a change to the value of radius? Now, your whole app is messed up. There is no reason for this property to be public if it is not being used.
+
+*/
