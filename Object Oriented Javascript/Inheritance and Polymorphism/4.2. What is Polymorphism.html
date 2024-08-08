@@ -1,0 +1,36 @@
+<!--
+Prototypes
+
+Before we learn how to implement inheritance in JavaScript, we have to talk about prototypes.
+
+A prototype is basically the parent object of an object. Every object has a prototype. As we said, almost everything in JavaScript is an object. That means that even variables and arrays have a prototype.
+
+Let's look at the prototype of an array. To get the prototype of an object, we can use the __proto__ property.
+
+const arr = [];
+console.log(arr.__proto__);
+
+This is what we get as a result. This is the parent object of the array object. The methods you see are all methods of the parent object, the Array class.
+
+If we log the prototype of let obj = { name: 'Jeff' }, we would see all the methods of the Object constructor function.
+
+What do prototypes look like on classes and objects we write ourselves?
+
+function Circle() {
+    this.radius = 5;
+    
+    this.area = () => radius * radius * Math.PI;
+    this.circumference = () => radius * 2 * Math.PI;
+}
+
+let circ = new Circle();
+console.log(circ.__proto__);
+
+This is the result we get. The constructor function is the actual function we used to create the object. Its prototype is still the constructor function for all Objects.
+
+Constructor functions themselves have a prototype property. We can access it by Circle.prototype. This is the prototype that would be given to any object created using that constructor function. Since the object circ was created using our constructor function, circ.__proto__ would be the same as Circle.prototype. Let's see:
+
+console.log(Circle.prototype);
+
+That is exactly what we see. Our knowledge about prototypes will come in handy later.
+-->
