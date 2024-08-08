@@ -51,3 +51,25 @@ calculator.calculate(5, 2, '+');
 // 7
 Make sure to add the method to the property of the class, not inside of it.
 */
+//coddys solution
+function Calculator(num1, num2, operator) {
+    this.num1 = num1;
+    this.num2 = num2;
+    this.operator = operator;
+}
+
+Calculator.prototype.calculate = function() {
+    switch (this.operator) {
+        case '+':
+            return this.num1 + this.num2;
+        case '-':
+            return this.num1 - this.num2;
+        case '*':
+            return this.num1 * this.num2;
+        case '/':
+            return this.num1 / this.num2;
+    }
+}
+
+//my solution
+
