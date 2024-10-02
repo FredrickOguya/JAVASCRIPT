@@ -7,7 +7,7 @@ const db = mysql.createConnection({
     port: '3306',
     user: 'root' ,
     password: 'Northstar9',
-    database: 'node_Crud'
+    database: 'mysql2'
 })
 //connect
 db.connect((err)=>{
@@ -19,3 +19,4 @@ db.connect((err)=>{
     console.log('Successfully connected to DB')
 });
 //export the connection
+module.exports = db
