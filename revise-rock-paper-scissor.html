@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        let randomNumber=Math.random();
+        let computerMove;
+
+        if(randomNumber>0 && randomNumber<1/3){
+            computerMove = 'Rock';
+        }else if(randomNumber>1/3 && randomNumber<2/3){
+            computerMove = 'Paper';
+        }else if(randomNumber>2/3){
+            computerMove ='Scissors';
+        }
+        if(computerMove==='Rock'){
+            console.log(' You: Rock\n Computer: Rock\n You Tie')
+        }else if(computerMove==='Paper'){
+            console.log(' You: Rock\n Computer: Paper\n You lose')
+        }else if(computerMove==='Scissors'){
+            console.log(' You: Rock\n Computer: Scissors\n You Win')
+        }
+        
+    " class="rock">Rock</button>
+    <button onclick="
+     randomNumber=Math.random();
+
+    if(randomNumber>0 && randomNumber<1/3){
+        computerMove = 'Rock';
+    }else if(randomNumber>1/3 && randomNumber<2/3){
+        computerMove = 'Paper';
+    }else if(randomNumber>2/3){
+        computerMove ='Scissors';
+    }
+    if(computerMove==='Rock'){
+        console.log(' You: Rock\n Computer: Rock\n You Tie');
+    }else if(computerMove==='Paper'){
+        console.log(' You: Rock\n Computer: Paper\n You Lose')
+    }else if(computerMove==='Scissors'){
+        console.log(' You: Rock\n Computer: Scissors\n You Win')
+    }
+"
+    class="paper">Paper</button>
+    <button onclick="
+        randomNumber=Math.random();
+
+   if(randomNumber>0 && randomNumber<1/3){
+        computerMove = 'Rock';
+   }else if(randomNumber>1/3 && randomNumber<2/3){
+       computerMove = 'Paper';
+   }else if(randomNumber>2/3){
+       computerMove ='Scissors';
+   }
+   
+   if(computerMove==='Rock'){
+        console.log(' You: Scissors\n Computer: Rock\n You Lose')
+    }else if(computerMove==='Paper'){
+        console.log(' You: Scissors\n Computer: Paper\n You Win')
+    }else if(computerMove==='Scissors'){
+        console.log(' You: Scissors\n Computer: Scissors\n You Tie')
+    }
+   "
+   class="scissors">scissors</button>
+    <script src="revise-rock-paper-scissor.js"></script>
+</body>
+</html>
